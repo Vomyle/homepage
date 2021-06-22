@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+}
+
+.header {
+    height: 52px;
+    background: skyblue;
+    display: flex;
+}
+
+.header_row {
+    padding: 0 40px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header_row,
+.three-up {
+    display: flex;
+    flex: 1;
+}
+
+.welcome {
+    position: absolute;
+    border-right: 1px solid white;
+    padding-right: 85px;
+}
+
+.text,
+.sign_in,
+.registered {
+    color: white;
+}
+
+#text_language {
+    padding-right: 5px;
+    position: relative;
+}
+
+.vouchers {
+    padding-left: 50%;
+}
+
+.welcome,
+.vouchers,
+.language,
+.money,
+.button {
+    display: flex;
+}
+
+.sign_in,
+.registered {
+    border: none;
+    background: skyblue;
+}
+
+.handbag_image {
+    width: 20px;
+    height: 20px;
+}
+
+.single_image {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
+
+.single_image_handbag {
+    width: 14px;
+    height: 14px;
+    font-size: 10px;
+    border-radius: 14px;
+    background-color: violet;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.money {
+    padding-left: 40px;
+}
+
+.money,
+.language {
+    padding-right: 50px;
+    border-right: 1px solid white;
+}
+
+.three-up {
+    align-items: center;
+    flex-direction: row;
+}
+
+.characters {
+    color: white;
+}
+
+.subnav {
+    display: none;
+    list-style: none;
+    margin-top: 28px;
+    margin-right: 10px;
+    padding-top: 10px;
+    position: absolute;
+    padding-left: 0px !important;
+    background: white;
+    border-radius: 4px;
+}
+
+.subnav .english {
+    display: inline-block;
+    padding: 15px 45px;
+    color: black;
+}
+
+.language #text_language:hover {
+    color: yellow;
+}
+
+.language #text_language:hover .subnav {
+    display: block;
+}
+
+#text_language {
+    display: flex;
+}
+
+.language .subnav li:hover {
+    color: blue
+}
+
+.icon_arrow {
+    padding-left: 5px;
+    padding-top: 3px;
+    font-size: 10px;
+    padding-top: 2px;
+}
+
+.nav {
+    height: 135px;
+    background-color: skyblue;
+    border-top: 1px solid white;
+    text-align: center;
+    align-items: center;
+    padding: 0 55px;
+}
+
+.search {
+    border: none;
+}
+
+.icon_search {
+    background: white;
+}
+
+.search_icon {
+    margin-left: 70px;
+    border: 1px solid white;
+    background: white;
+    border-radius: 15px;
+}
+
+.nav {
+    display: flex;
+}
+
+.icon {
+    float: right;
+}
+
+.list {
+    display: flex;
+}
+
+.list_item {
+    padding: 0 5px !important;
+    color: white;
+    display: flex;
+    line-height: 40px;
+}
+
+.miukid {
+    padding-right: 50px;
+}
+
+.cart_handbag {
+    display: flex;
+}
+
+.handbag {
+    width: 16px;
+    height: 16px;
+}
+
+.handbag_cart {
+    height: 28px;
+    width: 28px;
+    border-radius: 28px;
+    background: violet;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.cart_handbag {
+    padding-left: 30px;
+}
+
+.icon_below {
+    font-size: 10px;
+    padding-top: 15px;
+}
+
+.cart {
+    color: white;
+}
+
+.list_item:hover {
+    background: rgb(54, 136, 168);
+    border-radius: 14px;
+}
+
+.catetories {
+    display: flex;
+    background: skyblue;
+    height: 40px;
+    padding-left: 20px;
+    padding-top: 17px;
+}
+
+.cate {
+    padding-left: 20px;
+}
+
+.section_body {
+    padding: 20px 30px;
+    display: flex;
+}
+
+.block {
+    background: #f5fcff;
+    display: inline-block;
+    height: 450px;
+    width: 266px;
+}
+
+.book {
+    padding-bottom: 70px !important;
+}
+
+.services ul {
+    list-style: none;
+    padding-left: 0px !important;
+    padding-top: 30px;
+}
+
+.services ul li {
+    padding: 10px 20px;
+}
+
+.clothing {
+    display: flex;
+}
+
+.backpack {
+    display: flex;
+}
+
+.plus_sign {
+    padding-left: 70px;
+}
+
+.sister_kids {
+    display: flex;
+}
+
+.slideshow {
+    padding: 0 30px;
+}
+
+.back {
+    padding: 7px 11px;
+    border-radius: 15px;
+    background: white;
+    position: relative;
+    margin-top: 170px;
+    margin-left: 30px;
+}
+
+.back_right {
+    padding: 7px 11px;
+    border-radius: 15px;
+    background: black;
+    position: absolute;
+    color: white;
+    margin-top: 170px;
+    margin-left: 38.5%;
+}
+
+.image_slideshow {
+    position: absolute;
+}
+
+.sister {
+    position: absolute;
+    right: 30px;
+    object-fit: fill;
+}
+
+.icon_menu {
+    padding-right: 14px;
+}
+
+.new_arival {
+    height: 500px;
+    padding-top: 50px;
+}
+
+.row {
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(71, 70, 70);
+}
+
+.icon_left {
+    margin-right: 5px;
+}
+
+.icon_left,
+.icon_right {
+    padding: 4px 8px;
+    border-radius: 15px;
+    background-color: #f4f4f4;
+    font-size: 10px;
+}
+
+.arrival {
+    padding-right: 20px;
+}
+
+.sale {
+    border: 1px solid #fdc140;
+    background: #fdc140;
+    border-radius: 5px;
+    display: inline-block;
+    position: absolute;
+    margin-left: 65px;
+    font-size: 13px;
+}
+
+.sale_sweatshirt {
+    padding-top: 20px;
+}
+
+.sweatshirt {
+    position: absolute;
+    padding-top: 5px;
+}
+
+.shirt {
+    position: absolute;
+    padding-left: 102px;
+}
+
+.star {
+    font-size: 10px;
+    color: goldenrod;
+}
+
+.Rewiew {
+    padding-left: 5px;
+}
+
+.all_star,
+.sale_money {
+    display: flex;
+    padding-top: 15px;
+}
+
+.fourty_two {
+    padding-left: 23px;
+    opacity: 0.5;
+}
+
+.sale_animal,
+.sale_shoe {
+    padding-top: 130px;
+}
+
+.frice_only_from {
+    display: flex;
+    margin-top: 300px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.frice {
+    background: rgb(227, 61, 104);
+    height: 60px;
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.winter_harvest {
+    background: hsl(0, 0%, 96%);
+    height: 60px;
+    width: 255px;
+    text-align: center;
+}
+
+.frice_only {
+    font-size: 17px;
+}
+
+.ninety_nine {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.clothes {
+    background-color: rgb(244, 244, 244);
+}
+
+.harvest {
+    font-size: 23px;
+    color: tomato;
+    font-weight: bold;
+}
+
+.fashion {
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 0.5;
+}
