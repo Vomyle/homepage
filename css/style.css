@@ -153,6 +153,7 @@
 
 .search {
     border: none;
+    border-radius: 7px;
 }
 
 .icon_search {
@@ -163,7 +164,7 @@
     margin-left: 70px;
     border: 1px solid white;
     background: white;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .nav {
@@ -931,4 +932,164 @@
 
 #education {
     padding-top: 76px;
+}
+
+.section_footer {
+    /* margin: 40px 30px; */
+    border-top: 1px solid #e5e5ec;
+    padding-top: 30px;
+}
+
+.container_all_footer {
+    margin: 0 30px;
+    display: flex;
+    color: #888895;
+}
+
+.image_footer_first,
+.image_footer_second,
+.telephone,
+.email,
+.oclock {
+    display: flex;
+}
+
+.container_contact,
+.container_information,
+.container_service,
+.container_links,
+.container_instagram {
+    flex: 1;
+}
+
+.image_footer_first {
+    padding-top: 20px;
+}
+
+.container_information,
+.container_service,
+.container_links,
+.container_instagram {
+    padding-top: 42px;
+}
+
+#miukid_premeum {
+    padding-top: 20px;
+}
+
+.container_information {
+    padding-left: 50px;
+}
+
+.telephone {
+    padding-top: 17px;
+}
+
+.email {
+    padding-top: 7px;
+}
+
+.oclock {
+    padding-top: 7px;
+}
+
+.icon_footer {
+    padding-right: 9px;
+}
+
+.title_footer {
+    color: black;
+    font-size: 22px;
+}
+
+.text_about_us {
+    padding-top: 17px;
+}
+
+.text_general {
+    padding-top: 10px;
+}
+
+.text_shipping_return {
+    padding-top: 10px;
+    padding-left: 5px;
+    color: black;
+}
+
+.buy_this_theme {
+    background: #7cd0f5;
+    padding: 10px 15px;
+    border-radius: 23px;
+    border: none;
+    margin-top: 20px;
+    color: white;
+}
+
+.buy_this_theme:focus {
+    border: none;
+}
+
+.image_footer {
+    padding-right: 7px;
+}
+
+.text_icon_footer {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin: 0px 30px;
+}
+
+#icon_footer {
+    display: flex;
+    flex: 1;
+    opacity: 0.6;
+}
+
+.all_home {
+    display: flex;
+    flex: 1;
+    padding-left: 60%;
+    color: #888895;
+}
+
+.icon_twitter,
+.icon_stripe,
+.icon_vine {
+    padding-right: 20px;
+}
+
+.home {
+    padding-right: 20px;
+    color: black;
+}
+
+.new_arrival {
+    padding-right: 20px;
+}
+
+.footer_final {
+    display: flex;
+    padding-top: 40px;
+    border-top: 1px solid #e5e5ec;
+    margin: 0px 30px;
+}
+
+.copyright,
+.visa {
+    display: flex;
+    color: #888895;
+}
+
+.visa {
+    padding-left: 49%;
+}
+
+#visa {
+    padding-right: 5px;
+}
+
+#text_copyright_second {
+    color: black;
+    padding: 0 2px;
 }
