@@ -2,8 +2,24 @@
     margin: 0;
 }
 
+#navigation ul {
+    padding: 0 !important;
+}
+
 *:focus {
     outline: none;
+}
+
+.right {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -80,21 +96,28 @@
     text-align: center;
     flex-direction: column;
     margin-right: 10px;
+    position: relative;
+    margin-left: -6px;
 }
 
 .money {
-    padding-left: 40px;
+    padding-left: 28px;
+}
+
+.button {
+    padding: 0 10px;
 }
 
 .money,
 .language {
-    padding-right: 50px;
+    padding-right: 14px;
     border-right: 1px solid white;
 }
 
 .three-up {
     align-items: center;
     flex-direction: row;
+    justify-content: flex-end;
 }
 
 .characters {
@@ -104,27 +127,35 @@
 .subnav {
     display: none;
     list-style: none;
-    margin-top: 28px;
-    margin-right: 10px;
-    padding-top: 10px;
     position: absolute;
-    padding-left: 0px !important;
+    top: 25px;
+    left: -80px;
     background: white;
     border-radius: 4px;
+    align-items: center;
+    /* display: flex; */
+    flex-direction: column;
+    padding-left: 11px !important;
 }
 
 .subnav .english {
     display: inline-block;
-    padding: 15px 45px;
+    padding: 15px;
     color: black;
+    width: 100%;
+    /* padding-left: 26px; */
 }
 
-.language #text_language:hover {
+#text_language:hover {
     color: yellow;
 }
 
-.language #text_language:hover .subnav {
+#text_language:hover .subnav {
     display: block;
+}
+
+.text_usd {
+    color: white;
 }
 
 #text_language {
@@ -133,6 +164,98 @@
 
 .language .subnav li:hover {
     color: blue
+}
+
+#hover_bestseller {
+    display: none;
+    list-style: none;
+    top: 67px;
+    left: -49px;
+    position: absolute;
+    padding-left: 0px !important;
+    background: white;
+    border-radius: 4px;
+    z-index: 999;
+    color: black;
+    align-items: center;
+}
+
+.list li:hover #hover_bestseller {
+    display: flex;
+}
+
+.list li {
+    display: inline-block;
+    position: relative;
+}
+
+.english_toys {
+    padding-right: 60px;
+    font-size: 20px;
+}
+
+.english_edication {
+    padding-right: 25px;
+    font-size: 20px;
+}
+
+.image_hover {
+    padding-left: 60px;
+}
+
+.english_fashion {
+    padding-right: 36px;
+    font-size: 20px;
+}
+
+.english_clothing {
+    padding-right: 44px;
+    opacity: 0.7;
+}
+
+.english_shoe {
+    padding-right: 66px;
+    opacity: 0.7;
+}
+
+.english_backpack_one {
+    color: skyblue;
+}
+
+.english_backpack,
+.english_backpack_one {
+    padding-right: 35px;
+    opacity: 0.7;
+}
+
+.english_hat {
+    padding-right: 75px;
+    opacity: 0.7;
+}
+
+.english_accessories {
+    padding-right: 23px;
+    opacity: 0.7;
+}
+
+.list_item_bestseller:hover {
+    background: rgb(54, 136, 168);
+    border-radius: 14px;
+}
+
+.hover_fashion {
+    list-style: none;
+}
+
+.hover_toys,
+.hover_edication {
+    list-style: none;
+    padding-left: 60px;
+}
+
+.text_currency {
+    padding-right: 3px;
+    color: white;
 }
 
 .icon_arrow {
@@ -154,6 +277,7 @@
 .search {
     border: none;
     border-radius: 7px;
+    padding: 6px;
 }
 
 .icon_search {
@@ -173,6 +297,7 @@
 
 .icon {
     float: right;
+    padding-top: 5px;
 }
 
 .list {
@@ -180,6 +305,13 @@
 }
 
 .list_item {
+    padding: 0 5px !important;
+    color: white;
+    display: flex;
+    line-height: 40px;
+}
+
+.list_item_bestseller {
     padding: 0 5px !important;
     color: white;
     display: flex;
@@ -222,6 +354,11 @@
     color: white;
 }
 
+.cart_money {
+    color: white;
+    padding-left: 17px;
+}
+
 .list_item:hover {
     background: rgb(54, 136, 168);
     border-radius: 14px;
@@ -257,8 +394,8 @@
 
 .services ul {
     list-style: none;
-    padding-left: 0px !important;
-    padding-top: 30px;
+    /* padding-left: 0px !important;
+        padding-top: 30px; */
 }
 
 .services ul li {
@@ -301,7 +438,7 @@
     position: absolute;
     color: white;
     margin-top: 170px;
-    margin-left: 42%;
+    margin-left: 578px;
 }
 
 .image_slideshow {
@@ -310,8 +447,8 @@
 }
 
 .sister {
-    position: absolute;
-    right: 30px;
+    position: relative;
+    right: -650px;
     object-fit: fill;
 }
 
@@ -397,7 +534,7 @@
 
 .frice_only_from {
     display: flex;
-    margin-top: 300px;
+    margin-top: 180px;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -485,11 +622,11 @@
 }
 
 .icon_view {
-    font-size: 7px;
+    font-size: 5px;
     position: absolute;
     color: white;
-    /* padding-left: 4px; */
-    padding-top: 2px;
+    padding-left: 4px;
+    padding-top: 3px;
 }
 
 .icon_view_all_products {
@@ -516,8 +653,16 @@
     margin-left: 10px;
 }
 
+.navigation {
+    padding-top: 10px;
+}
+
 .fashion_products_behind,
 .navigation {
+    display: flex;
+}
+
+.navigation_toys {
     display: flex;
 }
 
@@ -532,7 +677,6 @@
 .column {
     background: #7cd0f5;
     padding-top: 20px;
-    height: 216px;
 }
 
 .clothing_second,
@@ -540,18 +684,18 @@
 .backpack_second,
 .hat_second,
 .accessories_second {
-    padding: 7px 50px 7px 7px;
+    padding: 9px 50px 9px 9px;
 }
 
 .all_products {
-    margin: 7px 0px 30px 7px;
+    margin: 9px 0px 30px 9px;
 }
 
 .image_girl,
 .girl {
     object-fit: fill;
     width: 170px;
-    height: 235px;
+    height: 269px;
 }
 
 .Crepe_Jacket,
@@ -567,7 +711,6 @@
 
 .image_fashion {
     position: absolute;
-    padding-top: 5px;
 }
 
 .new {
@@ -576,8 +719,9 @@
     border-radius: 5px;
     display: inline-block;
     position: absolute;
-    margin-left: 130px;
+    margin-left: 122px;
     font-size: 13px;
+    margin-top: 6px;
 }
 
 .new_sale {
@@ -586,19 +730,26 @@
     border-radius: 5px;
     display: inline-block;
     position: absolute;
-    margin-left: 130px;
+    margin-left: 116px;
     font-size: 13px;
+    margin-top: 6px;
 }
 
 .text_fashion {
     position: relative;
-    margin-top: 160px;
+    margin-top: 173px;
     width: 140px;
+}
+
+.Crepe_Jacket_pompom,
+.money_fashion,
+.all_star_fashion {
+    padding-bottom: 7px;
 }
 
 .text_fashion_two {
     position: relative;
-    margin-top: 79px;
+    margin-top: 70px;
     width: 140px;
 }
 
@@ -803,7 +954,7 @@
 
 .text_dog {
     position: relative;
-    margin-top: 162px;
+    margin-top: 176px;
     width: 140px;
 }
 
